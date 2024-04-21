@@ -1,0 +1,213 @@
+div,
+header,
+main,
+input,
+button {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    display: grid;
+    place-items: center;
+    background: rgba(124, 124, 122, 1);
+}
+button:hover{
+    background-color: #949C9FEE;
+}
+.calculator {
+    width: 234px;
+    height: 320px;
+    background-color: #2B343AEE;
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.window-button-bar {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.window-button-bar>p {
+    cursor: pointer;
+    line-height: 1;
+    font-size: 10px;
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 5px 3px 5px 5px;
+}
+.window-button-bar>p:hover{
+    filter: brightness(1.1);
+}
+.window-button-bar>p:active{
+    filter: brightness(0.8);
+}
+
+.close {
+    background-color: #ff5c5cEE;
+    color: #AB3F41FF;
+}
+
+.minimize {
+    background-color: #ffbd4cEE;
+    color: #B6883AFF;
+}
+
+.zoom {
+    background-color: #00ca56EE;
+    color: #0E9341FF;
+}
+
+.cal-body {
+    display: grid;
+    grid-template-colums: 25% 25% 25% 25%;
+    grid-template-rows: 50px repeat(5, 1fr);
+    gap: 1px;
+    grid-template-areas:
+        "screen screen screen screen"
+        "clear something percent divide"
+        "seven eight nine multiply"
+        "four five six minus"
+        "one two three plus"
+        "zero zero dot equal"
+}
+
+.cal-screen {
+    font-size: 47px;
+    font-weight: 300;
+    color: #FFFFFFEE;
+    text-align: end;
+    grid-area: screen;
+    pointer-events: none;
+    border: none;
+    background: none;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.cal-button {
+    color: #FFFFFFEE;
+    font-size: 21px;
+    height: 48px;
+    position: relative;
+}
+
+.cal-button:active {
+    background: rgb(150, 150, 150);
+}
+
+.func {
+    color: #FFFFFFEE;
+    font-size: 21px;
+    font-weight: 400;
+    background: rgb(97, 97, 95);
+}
+
+.func:active {
+    background: rgb(120, 120, 120);
+}
+
+.operate {
+    background-color: #ffa10d;
+    font-weight: 700;
+}
+
+.operate:active {
+    background-color: #FFA00AEE;
+}
+
+.operate:hover {
+    background-color:#B0731EEE;
+    z-index: 10;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+    margin-top: 0px;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.somthing {
+    grid-area: somthing;
+}
+
+.percent {
+    grid-area: percent;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.equal {
+    grid-area: equal;
+}
